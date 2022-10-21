@@ -1,7 +1,7 @@
 {
-  "name": "Astro-MD V2",
+  "name": "Asiata-md V2",
   "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.com/vihangayt0/Astro-MD-V2",
+  "repository": "https://github.com/Thisan01/Astro-MD-V2",
   "logo": "",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "env": {
@@ -34,17 +34,17 @@
 "FOOTER" :{
     "description" : "Footer Name",
     "required" : true,
-  "value" : "៚ᴠɪʜͥᴀɴͣɢͫᴀ ʏᴛ͢⁸⁵⁴¹⃟✦⃝̮̮〽️"
+  "value" : "៚"🇱🇰ᴛʜᴇ ʀᴀᴠᴀɴᴀ ᴛᴇᴄʜ ғᴀᴍɪʟʏ🇱🇰️"〽️"
 },
 "OWNER_NAME" :{
     "description" : "Owner Name",
     "required" : true,
-  "value" : "៚ᴠɪʜͥᴀɴͣɢͫᴀ ʏᴛ͢⁸⁵⁴¹⃟✦⃝̮̮〽️"
+  "value" : "៚   ✪ɪͥᴛͭsᷤᴍͫᴇͤ☚⃟@Sanon〽️"
 },
     "OWNER_NUMBER" :{
     "description" : "Owner Number",
     "required" : true,
-  "value" : "+44 7441 466940"
+  "value" : "+94766816809"
 },
     "SONG_DOWN" :{
     "description" : "Song downloading txt",
@@ -79,7 +79,7 @@
                         "CAPTION" :{
     "description" : " caption",
     "required" : true,
-  "value" : "*𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝙳 𝙱𝚈 𝙰𝚂𝚃𝚁𝙾-𝙼𝙳*"
+  "value" : "*𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝙳 𝙱𝚈 ASIATA-𝙼𝙳*"
 },
                         "BUTTON" :{
     "description" : "alive button txt",
@@ -89,7 +89,7 @@
                             "BUTTONURL" :{
     "description" : "alive button url",
     "required" : true,
-  "value" : "youtube.com/hjwn7skv"
+  "value" : "youtube.com"
 }, 
                            "onlygroup" :{
     "description" : "onlygroup",
