@@ -1,7 +1,7 @@
 const {
 	default: makeWASocket,
 	useSingleFileAuthState,
-	DisPeaceMDectReason,
+	DisconnectReason,
 	getContentType,
     jidDecode
 } = require('@adiwajshing/baileys')
@@ -16,20 +16,20 @@ const { state, saveState } = useSingleFileAuthState('./session.json')
 const prefix = '.'
 const owner = ['94712448370']
 
-const PeaceMDectToWA = () => {
+const connectToWA = () => {
 	const PeaceMD = makeWASocket({
 		logger: P({ level: 'silent' }),
 		printQRInTerminal: true,
 		auth: state,
 	})
 	
-	PeaceMD.ev.on('PeaceMDection.update', (update) => {
-		const { PeaceMDection, lastDisPeaceMDect } = update
-		if (PeaceMDection === 'close') {
-			if (lastDisPeaceMDect.error.output.statusCode !== DisPeaceMDectReason.loggedOut) {
-				PeaceMDectToWA()
+	PeaceMD.ev.on('connection.update', (update) => {
+		const { connection, lastDisconnect } = update
+		if (connection === 'close') {
+			if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
+				connectToWA()
 			}
-		} else if (PeaceMDection === 'open') {
+		} else if (connection === 'open') {
 			console.log('Bot conected')
 		}
 	})
@@ -142,4 +142,4 @@ const PeaceMDectToWA = () => {
 	})
 }
 
-PeaceMDectToWA()
+connectToWA()
